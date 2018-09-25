@@ -1,0 +1,315 @@
+/*---------------MAIN CSS------------------------*/
+body {
+  background: black;
+  font-family: 'Varela', sans-serif;
+}
+#box-container {
+  /*align-items: center;*/
+    display: flex;
+    height: 100vh;
+  }
+ #boxSlide {
+  /*align-items: center;*/
+    display: flex;
+    height: 50vh;
+    /*background-color: black;*/
+    /*margin-top: 10px;*/
+  }
+  #box-1 { 
+    align-self: center;
+    background-color: black;
+    height: 45vh;
+    width: 50vw;
+    margin: 0 0 0 0;
+  }
+  #boxIcon {
+  /*align-items: center;*/
+  height: 10vh;
+    /*background-color: black;*/
+    /*margin-top: 10px;*/
+  }
+
+  .bannerThing {
+  background-image: url("images/preview.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.arrow
+{
+  height:5vh; 
+  width :5vw;
+  /*background-color: black;*/
+  /*align-items: center;*/
+  margin:23vh 0 23vh 25vw;
+}
+.arrowRight
+{
+  transform: scaleX(-1);
+  height:5vh; 
+  width :5vw;
+  /*background-color: black;*/
+  /*align-items: center;*/
+  margin:23vh 25vw 23vh 0;
+}
+.arrowSvg
+{
+  fill: blue;
+}
+/* ---------------GLITCH ANIMATION--------------*/
+@import "compass/css3";
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+@keyframes noise-anim {
+  0% {
+    clip: rect(77px, 9999px, 77px, 0);
+  }
+  5% {
+    clip: rect(86px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(3px, 9999px, 62px, 0);
+  }
+  15% {
+    clip: rect(40px, 9999px, 64px, 0);
+  }
+  20% {
+    clip: rect(50px, 9999px, 3px, 0);
+  }
+  25% {
+    clip: rect(71px, 9999px, 86px, 0);
+  }
+  30% {
+    clip: rect(28px, 9999px, 65px, 0);
+  }
+  35% {
+    clip: rect(10px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(62px, 9999px, 48px, 0);
+  }
+  45% {
+    clip: rect(2px, 9999px, 50px, 0);
+  }
+  50% {
+    clip: rect(81px, 9999px, 46px, 0);
+  }
+  55% {
+    clip: rect(70px, 9999px, 19px, 0);
+  }
+  60% {
+    clip: rect(6px, 9999px, 56px, 0);
+  }
+  65% {
+    clip: rect(81px, 9999px, 25px, 0);
+  }
+  70% {
+    clip: rect(99px, 9999px, 73px, 0);
+  }
+  75% {
+    clip: rect(93px, 9999px, 60px, 0);
+  }
+  80% {
+    clip: rect(47px, 9999px, 12px, 0);
+  }
+  85% {
+    clip: rect(62px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(15px, 9999px, 16px, 0);
+  }
+  95% {
+    clip: rect(8px, 9999px, 19px, 0);
+  }
+  100% {
+    clip: rect(57px, 9999px, 5px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(74px, 9999px, 7px, 0);
+  }
+  5% {
+    clip: rect(91px, 9999px, 47px, 0);
+  }
+  10% {
+    clip: rect(65px, 9999px, 22px, 0);
+  }
+  15% {
+    clip: rect(99px, 9999px, 87px, 0);
+  }
+  20% {
+    clip: rect(13px, 9999px, 12px, 0);
+  }
+  25% {
+    clip: rect(30px, 9999px, 100px, 0);
+  }
+  30% {
+    clip: rect(32px, 9999px, 1px, 0);
+  }
+  35% {
+    clip: rect(7px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(52px, 9999px, 7px, 0);
+  }
+  45% {
+    clip: rect(73px, 9999px, 24px, 0);
+  }
+  50% {
+    clip: rect(72px, 9999px, 88px, 0);
+  }
+  55% {
+    clip: rect(60px, 9999px, 20px, 0);
+  }
+  60% {
+    clip: rect(40px, 9999px, 34px, 0);
+  }
+  65% {
+    clip: rect(26px, 9999px, 62px, 0);
+  }
+  70% {
+    clip: rect(84px, 9999px, 74px, 0);
+  }
+  75% {
+    clip: rect(68px, 9999px, 52px, 0);
+  }
+  80% {
+    clip: rect(90px, 9999px, 39px, 0);
+  }
+  85% {
+    clip: rect(12px, 9999px, 32px, 0);
+  }
+  90% {
+    clip: rect(70px, 9999px, 79px, 0);
+  }
+  95% {
+    clip: rect(99px, 9999px, 20px, 0);
+  }
+  100% {
+    clip: rect(55px, 9999px, 29px, 0);
+  }
+}
+/*---------------------MOUSE SCROLL ANIMATION-------------------*/
+.scroll-downs {
+  position: absolute;
+  top: 85vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #00e6e6/*#248f8f*/ /*#fff*/;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #00e6e6/*#fff*/;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+/*---------------------SWITCH ANIMATON AND BUTTON------------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 25px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00e6e6 /*#2196F3*/;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

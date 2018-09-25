@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+	<title>Proxie</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Dancing+Script|Fredericka+the+Great|Qwigley|Shadows+Into+Light|Spectral+SC|Anton|Audiowide|Berkshire+Swash|Bungee|Cinzel|Cookie|Great+Vibes|Indie+Flower|Josefin+Slab|Lora|Pacifico|Permanent+Marker|Poiret+One|Press+Start+2P|Satisfy|Spectral+SC|Tangerine|Ubuntu|Vollkorn+SC"" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+   
+	 <link rel="stylesheet" type="text/css" href="glitch.css">
+    <!-- <script src="darkmode.js"></script> -->
+
+<script>
+  $(document).ready(function(){
+     $(".slider").click(function(){
+
+     if ($("body").hasClass("nightTheme") && $(".colorChange").hasClass("nightTheme"))
+      {
+        $("body").removeClass("nightTheme");
+        $(".colorChange").removeClass("nightTheme")
+       $('.lull').append('<style>.glitch:before{background:black !important; color:white;}</style>');
+         $('.lull').append('<style>.glitch:after{background:black !important; color:white;}</style>');
+      } 
+      else {
+        $("body").addClass("nightTheme");
+        $(".colorChange").addClass("nightTheme");
+        $('.lull').append('<style>.glitch:before{background:white !important; color:black;}</style>');
+         $('.lull').append('<style>.glitch:after{background:white !important; color:black;}</style>');
+      }
+
+        // $("body").css("background-color", "white");
+        // $(".colorChange").css("color", "black");
+         // $(".glitch").css("background","pink");
+
+     });
+});
+</script>
+
+<style>
+.lineTest
+{
+	float:left;
+    border-top: 1px solid #33cccc;
+    padding: 1em;
+    overflow: hidden;
+	color: white; 
+}
+.nightTheme{
+background: white;
+color: black;
+}
+</style>
+</head>
+
+
+
+<body class="">
+
+  <label class="switch" style="float: left; margin-left: 2vw; margin-top: 5vh" >
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" style="margin-top: 5vh; margin-right: 10vw; color: #00e6e6;">Contact</a>
+  </li>
+  
+</ul>
+
+<div id="box-container" style="" class="">
+<div class="glitch colorChange lull" data-text="PROXIE" style=" top:40%; position: absolute; left: 40vw;right: 40vw;">PROXIE</div> 
+	<div class="scroll-downs">
+  		<div class="mousey">
+    		<div class="scroller"></div>
+  		</div>
+	</div>
+</div>
+
+
+
+<div id="boxSlide" >
+	
+	<object data="arrow.svg" type="image/svg+xml" class="arrow">
+       
+    </object>
+  	<div id="box-1" style="background-color: white;"><!-- <img src="" style="width: 100%;height:100%; display: block;  object-fit: cover;"> -->	</div>
+  	<object data="arrow.svg" type="image/svg+xml" class="arrowRight"></object>
+	<!-- <img src="arrow.svg" class="arrowRight"/> -->
+
+	
+</div>
+
+ <div id="boxIcon">
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="https://github.com/Proxiie"><img src="github-icon.svg" style="width:2em; height:2em;" /></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://twitter.com/WtfOzzie"><img src="twitter.svg" style="width:2em; height:2em; " /></a>
+  </li>
+</ul>
+ 
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
